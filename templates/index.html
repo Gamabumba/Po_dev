@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News</title>
+</head>
+<body>
+    <h1>News</h1>
+    <ul>
+    {% for item in news_items %}
+        <li>
+            <h2>{{ item[0] }}</h2>
+            <p>{{ item[1] }}</p>
+            <a href="{{ item[2] }}">Read more</a>
+            <p>Source: {{ item[3] }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
